@@ -25,3 +25,4 @@ public class IfExample2 {
 		System.out.println("입장료는 " + charge + "원입니다.");
 	}
 }
+ 
