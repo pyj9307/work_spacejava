@@ -9,18 +9,28 @@ public class AniTest {
 		// 객체를 생성했음.
 		Animal dog = new Animal();
 		// 강아지 이름, 나이 설정.
-		dog.Name="강아지";
+		dog.name="강아지";
 		dog.age=1;
 		// 기본 메서드 하나 출력.
 		dog.showInfo();
+		System.out.println("dog의 주솟값");
+		System.out.println(dog);
+		System.out.println(dog.name);
+		System.out.println(dog.age);
 		
 		// 고양이 객체 생성, 이름, 나이 지정
 		// 출력도 한번 합니다.
 		
 		Animal cat = new Animal();
-		cat.Name="고양이";
+		cat.name="고양이";
 		cat.age=2;
 		cat.showInfo();
+		System.out.println("cat의 주솟값");
+		System.out.println(cat);
+		System.out.println(cat.name);
+		System.out.println(cat.age);
+		
+		
 	}
-
+	
 }
