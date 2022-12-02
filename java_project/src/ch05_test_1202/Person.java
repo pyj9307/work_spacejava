@@ -5,9 +5,18 @@ public class Person {
 	// 데이터 은닉 목적. 민감한 데이터는 직접 접근 불가 하게끔 만듦.
 	// get, set 함수를 이용해서 해당 데이터에 우회해서 접근함.
 	  private String name;
-	  float height;
-	  
-	  // 자동으로 생성된 set, get 함수들.
+	  private float height;
+
+		// 자동으로 생성된 height set, get 함수들.
+	  public float getHeight() {
+		return height;
+	}
+
+	public void setHeight(float height) {
+		this.height = height;
+	}
+
+	// 자동으로 생성된 name set, get 함수들.
 	  public String getName() {
 		return name;
 	}
