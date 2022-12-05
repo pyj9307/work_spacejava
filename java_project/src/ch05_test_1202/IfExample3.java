@@ -1,4 +1,4 @@
-package chapter4;
+package ch05_test_1202;
 
 public class IfExample3 {
 
@@ -22,6 +22,6 @@ public class IfExample3 {
 			grade = 'F';
 		} 
 		
-		System.out.println(score +"Á¡ÀÇ ÇÐÁ¡Àº " + grade + "ÀÔ´Ï´Ù.");
+		System.out.println(score +"ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ " + grade + "ï¿½Ô´Ï´ï¿½.");
 	}
 }
