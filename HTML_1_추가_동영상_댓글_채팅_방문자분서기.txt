@@ -1,0 +1,185 @@
+동영상 삽입 
+소스 코드 
+<!doctype html>
+<html>
+<head>
+  <title>WEB1 - HTML</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+  <ol>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+  </ol>
+  <h2>HTML</h2>
+  
+  <p>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/he6McUd6W1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </p>
+  
+  <p><a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 speicification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+  <img src="coding.jpg" width="100%">
+  </p><p style="margin-top:45px;">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+  </p>
+</body>
+</html>
+
+HTML5에서 iframe – frameborder 속성 사용하지 않기
+http://blog.hivelab.co.kr/html5%EC%97%90%EC%84%9C-iframe-frameborder-%EC%86%8D%EC%84%B1-%EC%82%AC%EC%9A%A9%ED%95%98%EC%A7%80-%EC%95%8A%EA%B8%B0/
+
+유튜브 동영상 
+(공유)share -> 퍼가기.
+소스 복사하기.
+잘됨. 
+
+-----------------------------------------------
+댓글 기능 추가. 
+소스 
+<!doctype html>
+<html>
+<head>
+  <title>WEB1 - HTML</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+  <ol>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+  </ol>
+  <h2>HTML</h2>
+  <p><a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 speicification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+  <img src="coding.jpg" width="100%">
+  </p><p style="margin-top:45px;">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+  </p>
+  <p>
+    <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://web1-2.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  </p>
+</body>
+</html>
+
+다른 분들이 만든 댓글 기능 추가하기.
+1 disqus 가입하기.
+2 i want to install disqus on my site 클릭. 
+3 basic 선택. 
+4 universal code 선택
+5 복사
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://web1-wzfbnctuu9.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+6. 결과 화면에서 
+Proceed 
+
+7. 댓글 확인 해보기. 
+8. 모든 페이지에 복사 해보기.
+
+-----------------------------------------
+채팅 기능 추가하기.
+척크
+https://www.tawk.to 
+1 회원 가입. 
+2 로그인 
+3 
+사실 아래 코드만 필요함. 
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/624f78aec72df874911df0f3/1g036uraa';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+확인. 
+--------------------------------
+웹 사이트 분석기. 
+
+9 추가. 
+구글 애널리틱스
+검색 : 구글 애널리틱스
+
+회원 가입. 
+새로운 계정 만들기 -> 
+계정 이름 : web1
+다음. 
+-----------------------------
+속성. 
+시간대 , 한국 시간대 
+원화 선택. 
+다음. 
+-----------------------------
+비즈니스 정보 
+작음 선택 -> 내 사이트 또는 앱에 대한 고객 참여도 확인.
+선택. 
+만들기. 
+약관 동의. 
+-------------------------
+웹 선택 -> 웹 사이트 URL -> 수업용 도메인 각자꺼 입력.
+-> 스트림 이름 : web 
+-> 스트림 만들기
+-> 새로운 온페이지 태그 추가 아래에 화사푤 클릭 하면, 
+코드 부분 본인 
+index.html, 1.html , 2.html, 3.html 
+파일에 복사.
+------------------------------
+작업 같이 해보기 . 
+1. 본인 깃허브에 접속해서 , 해당 폴더 다운 받기. 
+2. 구글 애널리틱스 의 코드를 붙여 넣기.
+3. 본인 깃허브에 업로드 하기. 
+4. 본인 계정 도메인 접속 해보기 
+5. 구글 애널리틱스 홈페이지 새로고침. 자기 홈 .
+6. 가장 아래에 실시간 보기 클릭. 
+확인 차. 
+제 도메인에 접속 해주세요. 확인용으로. 
+https://www.bscoding.ga 
+
+이형록씨 허락 하에. 
+개인용 도메인 접속 해볼까요?
+https://www.webweb1999.ga/
