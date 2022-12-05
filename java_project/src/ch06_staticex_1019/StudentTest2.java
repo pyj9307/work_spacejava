@@ -21,7 +21,12 @@ public class StudentTest2 {
 		System.out.println(studentlsy.serialNum);
 		System.out.println(studentlsy.studentName + " 학번:" 
 		                        + studentlsy.studentID);
-		
+
+		int num;
+		for(num=1; num<=5; num++) {
+			System.out.println(num);
+		}
 	}
+	
 }
 

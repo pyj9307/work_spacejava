@@ -16,10 +16,12 @@ public class TakeTrans {
 		Student pyjStudent = new Student("박영주", 30000);
 		KakaoTaxi kakaoTaxi3 = new KakaoTaxi(3);
 		pyjStudent.takeTaxi(kakaoTaxi3);
+		System.out.println("=====================");
 		System.out.println("박영주 학생의 3번 택시 탑승 후 정보");
 		pyjStudent.showInfo();
 		System.out.println("3번 택시의 정보");
 		kakaoTaxi3.showInfo();
+		System.out.println("=====================");
 		
 		// 객체 생성하기. 생성자는 매개변수가 2개인 생성자 호출해서 객체 만들기.
 		Student lsyStudent = new Student("이상용", 20000);
