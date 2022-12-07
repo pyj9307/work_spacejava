@@ -1,10 +1,16 @@
 package ch07_array_1019;
 
 public class Student {
-	 public String studentName;    // 학생 이름
+
+	public String studentName;    // 학생 이름
 	 public int grade;              // 학년
 	 public int money;             // 학생이 가지고 있는 돈
 	
+	 public Student(String studentName) {
+		super();
+		this.studentName = studentName;
+	}
+	 
 	 public Student(String studentName, int money)  // 이름과 돈 초기화하기
 	 {   
 		  this.studentName = studentName;

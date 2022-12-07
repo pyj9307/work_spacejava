@@ -4,15 +4,17 @@ public class CharArray {
 
 	public static void main(String[] args) {
 
-		char[] alpahabets = new char[26];
+		// 배열 선언
+		char[] alphabets = new char[26];
 		char ch = 'A';
 		
+		// 배열 값 설정
 		for(int i=0 ; i<5; i++, ch++){
-			alpahabets[i] = ch;
+			alphabets[i] = ch;
 		}
-		
+		// 배열 값 가져오기
 		for(int i=0; i<5; i++){
-			System.out.println(alpahabets[i] + "," + (int)alpahabets[i]);
+			System.out.println(alphabets[i] + "," + (int)alphabets[i]);
 		}
 	}
 }

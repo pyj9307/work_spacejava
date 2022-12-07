@@ -9,13 +9,13 @@ public class Student2 {
 	// 기본형을 제외하고는 참조형 변수. 예) Student2, String 등
 	
 		public void studentGetInfo() {
-		System.out.println("이름은 : "+studentName);
+		System.out.println("이름은 : " + studentName);
 		
 	}
 	
 	public void sum(int num1, int num2) { // void 리턴의 결과값이 없다.
 		
-		System.out.println("sum 함수를 호출한 결괏값 출력: "+num1+num2);
+		System.out.println("sum 함수를 호출한 결괏값 출력: " + num1 + num2);
 		
 	}
 	
