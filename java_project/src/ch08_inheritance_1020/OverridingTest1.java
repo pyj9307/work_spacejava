@@ -18,4 +18,5 @@ public class OverridingTest1 {
 		System.out.println(lsy.getCustomerName() +" 님이 지불해야 하는 금액은 " + lsy.calcPrice(price) + "원입니다.");
 //		System.out.println(customerKim.getCustomerName() +" 님이 지불해야 하는 금액은 " + customerKim.calcPrice(price) + "원입니다.");
 	}
+	
 }
