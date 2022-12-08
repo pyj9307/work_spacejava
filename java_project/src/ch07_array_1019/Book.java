@@ -4,7 +4,7 @@ public class Book {
 
 	private String bookName;
 	private String author;
-	// 기격추가
+	// 가격추가
 	private int price;
 	
 	// 가격추가함 매개변수가 3개인 생성자 만들기.
