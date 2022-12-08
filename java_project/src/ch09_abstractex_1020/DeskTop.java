@@ -1,6 +1,6 @@
 package ch09_abstractex_1020;
 
-public  class DeskTop extends Computer{
+public class DeskTop extends Computer{
 
 		
 	

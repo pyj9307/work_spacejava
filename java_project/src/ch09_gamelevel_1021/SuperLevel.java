@@ -16,6 +16,12 @@ public class SuperLevel extends PlayerLevel{
 	public void turn() {
 		System.out.println("한 바퀴 돕니다.");		
 	}
+	
+	@Override
+	public void over1() {
+		System.out.println("에너지파 할 줄 모르지롱.");		
+	}
+
 
 	@Override
 	public void showLevelMessage() {

@@ -6,5 +6,10 @@ public class MyNoteBook extends NoteBook{
 	public void typing() {
 		System.out.println("MyNoteBook Typing()");
 	}
+	
+	@Override
+	public void display() {
+		System.out.println("MyNoteBook Display()");		
+	}
 
 }

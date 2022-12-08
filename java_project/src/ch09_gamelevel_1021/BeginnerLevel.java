@@ -17,6 +17,11 @@ public class BeginnerLevel extends PlayerLevel{
 	public void turn() {
 		System.out.println("Turn 할 줄 모르지롱.");		
 	}
+	
+	@Override
+	public void over1() {
+		System.out.println("에너지파 할 줄 모르지롱.");		
+	}
 
 	@Override
 	public void showLevelMessage() {
