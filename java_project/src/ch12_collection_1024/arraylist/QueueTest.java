@@ -13,7 +13,7 @@ class MyQueue{
 	public String deQueue() {
 		int len = arrayQueue.size();
 		if(len == 0 ) { 
-			System.out.println("ť�� ������ϴ�");
+			System.out.println("큐가 비었습니다");
 			return null;
 		}
 		

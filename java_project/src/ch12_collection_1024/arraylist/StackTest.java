@@ -13,7 +13,7 @@ class MyStack{
 	public String pop() {
 		int len = arrayStack.size();
 		if(len == 0 ) { 
-			System.out.println("������ ������ϴ�");
+			System.out.println("스택이 비었습니다");
 			return null;
 		}
 		

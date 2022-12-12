@@ -8,7 +8,7 @@ class Outer{
 	
 		//getRunnable 메서드 이름이고, 매개변수로 i 라는 변수를 입력값
 	// getRunnable 메서드 호출 하면 , 결과 값이 참조형 변수. 결과값의 타입이 인터페이스 형. Runnable
-	// new MyRunnable(); 다형성 개념. 리턴 타입을 받는 형이 Runnable이다. 
+	// new MyRunnable(); 다형성 개념. 리턴 타입을 받는 형이 Runnable이다.
 	Runnable getRunnable(int i){
 
 		int num = 100;
