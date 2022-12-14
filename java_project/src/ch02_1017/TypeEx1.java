@@ -5,7 +5,7 @@ public static void main(String[] args) {
 		
 	byte b1 = 3; // 초기화 : 최초에 값을 할당, 대입한다.
 	int i1 = b1;
-	byte b1 = i1; // 
+	byte b3 = (byte) i1; // 
 	byte b2 = (byte)i1; // 소괄호의 의미는 캐스팅 연산자라고 함.
 	// 강제로 해당 소괄호안에 형으로 명시적, 강제적 형변환.
 	// 운 좋게 해당 값이 담을수 있다면, 해당 값이 정상 출력 되지만,
