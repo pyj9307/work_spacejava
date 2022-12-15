@@ -11,15 +11,15 @@ public class FileOutputStreamTest3 {
 		{
 		
 			byte[] bs = new byte[26];
-			byte data = 65;     //'A' �� �ƽ�Ű ��
-			for(int i = 0; i < bs.length; i++){  // A-Z ���� �迭�� �ֱ�
+			byte data = 65;     //'A' 의 아스키 값
+			for(int i = 0; i < bs.length; i++){  // A-Z 까지 배열에 넣기
 				bs[i] = data;
 				data++;
 			}
-			fos.write(bs, 2, 10);   // �迭�� 2 ��° ��ġ���� 10 �� ����Ʈ ����ϱ�
+			fos.write(bs, 2, 10);   // 배열의 2 번째 위치부터 10 개 바이트 출력하기
 		}catch(IOException e) {
 			e.printStackTrace();
 		}
-		System.out.println("����� �Ϸ�Ǿ����ϴ�.");
+		System.out.println("출력이 완료되었습니다.");
 	}
 }

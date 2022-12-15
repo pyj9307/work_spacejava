@@ -1,6 +1,6 @@
 package ch16_Thread_1027;
 
-public class Ex16_Ex6 {
+public class Ch16_Ex6 {
 	   public static void main( String [] args ) {
 	        
 	           Thread t2 = new Thread( new GooGoo_Yield(2) );

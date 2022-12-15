@@ -15,6 +15,7 @@ public class FileWriterTest {
 			fw.write("안녕하세요. 잘 써지네요"); //String 출력
 			fw.write(buf, 1, 2); //문자 배열의 일부 출력
 			fw.write("65");  //숫자를 그대로 출력
+			fw.write((char)65); // 아스키 숫자에 문자 대입하여 출력
 		}catch(IOException e) {
 			e.printStackTrace();
 		}
