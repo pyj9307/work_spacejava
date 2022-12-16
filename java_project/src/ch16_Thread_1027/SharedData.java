@@ -20,5 +20,6 @@ public class SharedData {
       System.out.print( name +" 이"+ data );
       data--;
       System.out.println( "를 "+ data +" 로 감소시킴  down 메서드 수행을 보장 받았음.");
+      
    }
 }
