@@ -2,11 +2,11 @@ package ch18.JDBC_1027;
 
 public class JDBC_Ex_DTO {
 
-	//DTO 의 역할은 자바 <---> 데이터베이스 , 데이터를 전달하기 위해서 담는 그릇. 
+	// DTO 의 역할은 자바 <---> 데이터베이스 , 데이터를 전달하기 위해서 담는 그릇. 
 	// DTO 라는 그릇에 담아서 , 데이터를 이동 시킴. 
 	// DTO, DAO 를 분리해서 작업하는 패턴은 기본적으로 유지보수를 편하게 하기위한 조치.
 	
-	int deptno; // dept 테이블의 칼럼을 저장하기 위한 인스턴스 변수를 정의.
+	int deptno; // dept 테이블의 칼럼을 저장하기 위한 인스턴스 변수를 정의, 데이터테이블의 각 행이 JDBC_Ex_DTO라는 클래스의 deptno, dname, loc 매개변수를 가지는 한개의 객체라는 것 인지.
 	String dname;
 	String loc;
 

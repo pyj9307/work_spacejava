@@ -15,22 +15,22 @@ public class JDBC_select_ex_1 {
 		 
 		 // 디비 서버의 위치를 적습니다. 기본은 자기 컴퓨터 주소인 localhost = 127.0.0.1(루프백주소) = cmd ipconfig 를 통해서 주소를
 		 // 확인해도 됩니다. 그리고, 만약, 여러분이 외부 디비 서버를 사용한다면, aws, google, oracle 제공하는 외부 서버 주소 사용시에도 
-		 // 여기에 작성 합니다. 
+		 // localhost 자리에 작성 합니다. 
 		 String url = "jdbc:oracle:thin:@localhost:1521:xe";
 //		 String url = "jdbc:oracle:thin:@10.100.102.21:1521:xe";
 		 
 		 //유저, 패스워드, 디비서버에 있는 계정을 사용합니다. 
-		 String userid = "scott";
-		 String passwd = "tiger";
+		 String userid = "system";
+		 String passwd = "k404";
 		 
 		 // 각 인터페이스를 간략히 소개. 
-		 //  디비를 연결하기위한 인스턴스.
+		 // 디비를 연결하기위한 인스턴스.
 		 // PreparedStatement : 해당 sql 문장을 전달하기 위한 인스턴스
 		 // ResultSet : 조회한 테이블의 내용을 담기 위한 인스턴스 : 1행 단위로 읽어서 해당 컬럼(열)을 불러옵니다.
 		 // 여러 데이터를 받는 그릇정도 보시면 됩니다. 
 		 Connection con = null;
 		 PreparedStatement pstmt = null;
-		 ResultSet rs = null;
+		 ResultSet rs = null; // sql 테이블을 JAVA로 받아올 때, 테이블을 생성해서 데이터 행렬을 복사해서 받음.
 		 try {
 			 Class.forName(driver);
 			 //명시된 드라이버 클래스를 메모리에 로딩한다. 
@@ -40,7 +40,7 @@ public class JDBC_select_ex_1 {
 			 
 			 //여기 이부분이 계속 변경 되어서 확인 들어갑니다.
 			 String query = "SELECT deptno,dname,loc FROM dept";
-			 //요청할 SQL  문을 String 변수에 저장한다.
+			 //요청할 SQL문을 String 변수에 저장한다.
 			 
 			 
 			 pstmt =con.prepareStatement(query); 
@@ -49,20 +49,20 @@ public class JDBC_select_ex_1 {
 			 
 			 
 			 // 이부분이 추가,수정, 삭제시 executeUpdate 로 변경됨. 
-			 rs = pstmt.executeQuery(); 
+			 rs = pstmt.executeQuery(); // Query는 데이터베이스에서 찾아오는 메서드, excuteUpdate -> 데이터베이스에 입력하는 메서드
 			 //SELECT 문을 요청하기 때문에 executeQuery()
 //			 메소드를 사용하며 결과는 ResultSet 객체로 받는다.
 			 while(rs.next()) {
-				 int deptno = rs.getInt("deptno");
+				 int deptno = rs.getInt("deptno"); // rs.get문자형식("열의 이름"); // rs는 아까 만든 ResultSet 클래스에 pstmt.executeQuery(); 해서 받아온 데이터 테이블.
 				 String dname = rs.getString("dname");
 				 String loc = rs.getString("loc");
 				 System.out.println(deptno + " " + dname + " " + loc);
 			 }
 		 }catch(Exception e) {
 			 e.printStackTrace();
-		 }finally {
+		 }finally { // 예외가 있든 없든 실행.
 			 try {
-				 if (rs != null) rs.close();
+				 if (rs != null) rs.close(); // 객체의 메모리를 해제할 때 .close 해제는 생성의 역순
 				 if (pstmt != null) pstmt.close();
 				 if ( con != null) con.close();
 			 }catch(SQLException e){

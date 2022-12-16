@@ -10,8 +10,8 @@ import java.util.ArrayList;
 public class JDBC_Ex_DAO {
 	String driver = "oracle.jdbc.driver.OracleDriver"; // 6행 ~ 9행 데이터베이스 접속을 위한 4가지 정보를 String 변수에 저장.
 	String url = "jdbc:oracle:thin:@localhost:1521:xe";
-	String userid = "scott";
-	String passwd = "tiger";
+	String userid = "system";
+	String passwd = "k404";
 
 	public JDBC_Ex_DAO() {
 		try {
@@ -22,7 +22,7 @@ public class JDBC_Ex_DAO {
 	}
 
 	public ArrayList<JDBC_Ex_DTO> select() {
-		ArrayList<JDBC_Ex_DTO> list = new ArrayList<JDBC_Ex_DTO>();
+		ArrayList<JDBC_Ex_DTO> list = new ArrayList<JDBC_Ex_DTO>(); //JDBC_Ex_DTO 라는 형으로 담는 ArrayList 객체(이름 list) 생성
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -31,9 +31,9 @@ public class JDBC_Ex_DAO {
 			con = DriverManager.getConnection(url, userid, passwd);
 			// DriverManager 클래스의 getConnection() 메소드를
 			// 이용해서 Connection 객체를 얻는다.
-			String query = "SELECT deptno,dname,loc FROM dept";
+			String query = "SELECT deptno,dname,loc FROM dept"; // query 매개변수에 쿼리문을 담고
 			// 요청할 SQL 문을 String 변수에 저장한다.
-			pstmt = con.prepareStatement(query);
+			pstmt = con.prepareStatement(query); // 쿼리문을 prepareStatement에 담아서
 			// SQL 문 전송에 필요한 PreparedStatement 객체를
 			// Connection 객체의 preparedStatement(sql)메소드를 이용해서 얻는다.
 			rs = pstmt.executeQuery();
