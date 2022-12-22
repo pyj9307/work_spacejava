@@ -41,7 +41,7 @@ public class GradeTest {
 	
 	public void createStudent() throws FileNotFoundException {
 		
-		Scanner scanner = new Scanner(new FileInputStream("studentinfo.txt"));
+		Scanner scanner = new Scanner(new FileInputStream("studentInfo.txt"));
 		
 		String name;
 		int id;
